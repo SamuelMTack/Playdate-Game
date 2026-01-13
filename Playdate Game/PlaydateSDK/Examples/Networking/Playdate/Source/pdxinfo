@@ -1,0 +1,5 @@
+name=Networking Demo
+author=Panic Inc.
+bundleID=com.panic.networking-demo
+version=0.1
+buildNumber=1

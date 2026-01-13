@@ -1,0 +1,6 @@
+name=Simple Tetris
+author=Antigravity
+description=A simple Tetris clone for Playdate.
+bundleID=com.antigravity.tetris
+version=1.0.0
+imagePath=launcher

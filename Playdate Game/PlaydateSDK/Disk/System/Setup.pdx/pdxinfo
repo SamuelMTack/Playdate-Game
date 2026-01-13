@@ -1,0 +1,6 @@
+name=Setup
+author=Panic Inc.
+description=First Launch Setup
+bundleID=com.panic.setup
+pdxversion=30002
+buildtime=818808929

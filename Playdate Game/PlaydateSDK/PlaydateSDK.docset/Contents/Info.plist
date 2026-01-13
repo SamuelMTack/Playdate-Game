@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>pdx</string>
+	<key>CFBundleName</key>
+	<string>Inside Playdate</string>
+	<key>DocSetPlatformFamily</key>
+	<string>pdx</string>
+	<key>isDashDocset</key>
+	<true/>
+	<key>DashDocSetFamily</key>
+	<string>dashtoc</string>
+	<key>dashIndexFilePath</key>
+	<string>Inside Playdate.html</string>
+	<key>isJavaScriptEnabled</key><true/>
+	<key>DashDocSetFallbackURL</key>
+	<string>https://sdk.play.date/inside-playdate</string>
+</dict>
+</plist>

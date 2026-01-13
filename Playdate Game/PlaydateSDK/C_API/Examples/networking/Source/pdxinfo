@@ -1,0 +1,5 @@
+name=C API Networking Demo
+author=Panic Inc.
+bundleID=com.panic.c-networking-demo
+version=0.1
+buildNumber=1
