@@ -1,0 +1,7 @@
+name=Gauntlet Clone
+author=Antigravity
+description=Dungeon crawler
+bundleID=com.antigravity.gauntlet
+version=1.0.0
+buildNumber=1
+imagePath=icon

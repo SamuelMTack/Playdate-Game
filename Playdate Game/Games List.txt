@@ -1,9 +1,2 @@
-Galaga
-Space Invaders
-Pac-Man
-Pong
-Kaboom!
-Breakout
-Missle Command
-Gauntlet
-Asteroids
+Galaga 
+
