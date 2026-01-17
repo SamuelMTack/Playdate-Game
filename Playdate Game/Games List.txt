@@ -1,3 +1,4 @@
+Slot Machine
 Pinball
 2048
 MineSweeper
