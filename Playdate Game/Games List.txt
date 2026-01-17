@@ -1,5 +1,6 @@
 Pinball
 2048
+MineSweeper
 Lunar Lander
 Rally-X
 Frogger
