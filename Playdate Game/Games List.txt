@@ -1,3 +1,5 @@
+Pinball
+2048
 Lunar Lander
 Rally-X
 Frogger
