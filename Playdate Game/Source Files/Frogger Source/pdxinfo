@@ -1,0 +1,6 @@
+name=Frogger
+author=Samuel
+description=Classic arcade frog crossing game
+bundleID=com.samuel.frogger
+version=1.0.0
+imagePath=
