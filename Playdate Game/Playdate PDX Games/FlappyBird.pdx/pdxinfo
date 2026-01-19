@@ -1,0 +1,8 @@
+name=Flappy Bird
+author=Samuel
+description=A Flappy Bird clone
+bundleID=com.samuel.flappybird
+version=1.0.0
+imagePath=
+pdxversion=30002
+buildtime=822104859

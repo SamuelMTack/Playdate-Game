@@ -1,0 +1,6 @@
+name=Black Jack
+author=Samuel
+description=A Blackjack clone
+bundleID=com.samuel.blackjack
+version=1.0.0
+imagePath=
