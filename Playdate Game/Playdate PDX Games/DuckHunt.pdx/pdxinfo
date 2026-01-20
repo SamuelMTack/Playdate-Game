@@ -1,8 +1,0 @@
-name=Duck Hunt
-author=Samuel
-description=A Duck Hunt clone
-bundleID=com.samuel.duckhunt
-version=1.0.0
-imagePath=
-pdxversion=30002
-buildtime=822106215

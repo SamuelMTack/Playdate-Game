@@ -1,0 +1,7 @@
+name=Blasteroids
+author=Antigravity
+description=Vector space shooter
+bundleID=com.antigravity.blasteroids
+version=1.0.0
+buildNumber=1
+imagePath=icon

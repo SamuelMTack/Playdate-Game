@@ -1,0 +1,6 @@
+name=Space Ship Fragile Lander
+author=Samuel
+description=Physics based lunar landing game
+bundleID=com.samuel.lunarlander
+version=1.0.0
+imagePath=

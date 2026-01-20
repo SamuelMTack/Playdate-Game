@@ -1,0 +1,8 @@
+name=Kill the Centipede's
+author=Antigravity
+description=A clone of Centipede
+bundleID=com.antigravity.centipede
+version=1.0.0
+imagePath=
+pdxversion=30002
+buildtime=822258198

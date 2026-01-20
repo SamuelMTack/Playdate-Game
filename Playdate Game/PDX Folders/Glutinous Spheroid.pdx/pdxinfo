@@ -1,0 +1,9 @@
+name=Glutinous Spheroid
+author=Antigravity
+description=A classic arcade maze game
+bundleID=com.antigravity.pacman
+version=1.0.0
+buildNumber=1
+imagePath=icon
+pdxversion=30002
+buildtime=822260162

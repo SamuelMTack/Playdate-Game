@@ -1,0 +1,9 @@
+name=Galactic Ship Defender
+author=Antigravity
+description=Space shooter with diving enemies
+bundleID=com.antigravity.galaga
+version=1.0.0
+buildNumber=1
+imagePath=icon
+pdxversion=30002
+buildtime=822261472

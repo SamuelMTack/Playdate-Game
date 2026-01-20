@@ -1,7 +1,0 @@
-name=Kaboom Clone
-author=Antigravity
-description=Catch the falling bombs!
-bundleID=com.antigravity.kaboom
-version=1.0.0
-buildNumber=1
-imagePath=icon

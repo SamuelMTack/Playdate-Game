@@ -1,0 +1,6 @@
+name=Bird Blaster
+author=Samuel
+description=A Duck Hunt clone
+bundleID=com.samuel.duckhunt
+version=1.0.0
+imagePath=

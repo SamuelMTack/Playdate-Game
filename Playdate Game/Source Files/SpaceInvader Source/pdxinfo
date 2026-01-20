@@ -1,7 +1,0 @@
-name=Space Invaders
-author=Antigravity
-description=A classic space shooter game
-bundleID=com.antigravity.spaceinvaders
-version=1.0.0
-buildNumber=1
-imagePath=icon

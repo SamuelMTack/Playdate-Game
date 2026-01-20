@@ -1,9 +1,0 @@
-name=Pinball
-author=User
-description=A simple pinball game with physics.
-bundleID=com.userid.pinball
-version=1.0.0
-buildNumber=100
-imagePath=icon
-pdxversion=30002
-buildtime=822005160

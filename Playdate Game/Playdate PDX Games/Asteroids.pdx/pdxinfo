@@ -1,9 +1,0 @@
-name=Asteroids Clone
-author=Antigravity
-description=Vector space shooter
-bundleID=com.antigravity.asteroids
-version=1.0.0
-buildNumber=1
-imagePath=icon
-pdxversion=30002
-buildtime=821856373

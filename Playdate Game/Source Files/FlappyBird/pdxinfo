@@ -1,6 +1,0 @@
-name=Flappy Bird
-author=Samuel
-description=A Flappy Bird clone
-bundleID=com.samuel.flappybird
-version=1.0.0
-imagePath=

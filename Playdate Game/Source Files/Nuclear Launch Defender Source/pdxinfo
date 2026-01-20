@@ -1,0 +1,7 @@
+name=Nuclear Launch Defender
+author=Antigravity
+description=Defend the cities!
+bundleID=com.antigravity.missilecommand
+version=1.0.0
+buildNumber=1
+imagePath=icon

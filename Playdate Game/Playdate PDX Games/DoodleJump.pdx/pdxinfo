@@ -1,8 +1,0 @@
-name=Doodle Jump
-author=Samuel
-description=A vertical platformer clone
-bundleID=com.samuel.doodlejump
-version=1.0.0
-imagePath=
-pdxversion=30002
-buildtime=822104308

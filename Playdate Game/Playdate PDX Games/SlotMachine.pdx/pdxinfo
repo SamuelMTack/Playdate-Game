@@ -1,9 +1,0 @@
-name=Slot Machine
-author=User
-description=A simple slot machine game.
-bundleID=com.userid.slotmachine
-version=1.0.0
-buildNumber=100
-imagePath=icon
-pdxversion=30002
-buildtime=822002034

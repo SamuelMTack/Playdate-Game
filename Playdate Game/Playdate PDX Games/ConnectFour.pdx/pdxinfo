@@ -1,8 +1,0 @@
-name=Connect Four
-author=Samuel
-description=Connect Four Clone
-bundleID=com.samuel.connectfour
-version=1.0.0
-imagePath=
-pdxversion=30002
-buildtime=822108453

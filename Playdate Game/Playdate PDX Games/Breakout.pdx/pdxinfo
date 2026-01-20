@@ -1,9 +1,0 @@
-name=Breakout Clone
-author=Antigravity
-description=Classic Breakout arcade game
-bundleID=com.antigravity.breakout
-version=1.0.0
-buildNumber=1
-imagePath=icon
-pdxversion=30002
-buildtime=821855844
