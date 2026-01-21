@@ -1,0 +1,8 @@
+name=CosmicCrank
+author=Antigravity
+description=A rotary defense game.
+bundleID=com.antigravity.cosmiccrank
+version=1.0
+imagePath=images/launcher
+pdxversion=30002
+buildtime=822294815
