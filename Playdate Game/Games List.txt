@@ -2,19 +2,12 @@
 
 TableTop Games
 	
-	War
-	Old Maid
 	Chess
 	Checkers
-	Go
 	Uno
 	Land Sea and Air
 	Catan
-	Monopoly
 	Candy Land
-	Snakes and Ladders
-	Quix
-	Scrabble
 	BattleShip
 
 	
