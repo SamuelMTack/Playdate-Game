@@ -1,0 +1,7 @@
+name=Game Library
+author=Panic Inc.
+description=Game Library
+bundleID=com.panic.gameLibrary
+imagePath=LauncherAssets/
+pdxversion=30002
+buildtime=818808929

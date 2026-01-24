@@ -1,0 +1,6 @@
+name=PlaydateCheckers
+author=Antigravity
+description=A Checkers game with AI for Playdate
+bundleID=com.antigravity.playdatecheckers
+version=1.0
+buildNumber=1

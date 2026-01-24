@@ -1,0 +1,118 @@
+#
+# CMake include file for Playdate games
+#
+cmake_minimum_required(VERSION 3.19)
+
+set(PRODUCT_DIR ${CMAKE_CURRENT_SOURCE_DIR} CACHE STRING "Built PDX directory")
+
+include(${SDK}/C_API/buildsupport/playdate.cmake)
+
+set(BUILD_SUB_DIR "")
+
+if (TOOLCHAIN STREQUAL "armgcc")
+	add_custom_command(TARGET ${PLAYDATE_GAME_DEVICE} PRE_BUILD COMMAND ${CMAKE_COMMAND} -E make_directory ${PRODUCT_DIR})
+
+	set_property(TARGET ${PLAYDATE_GAME_DEVICE} PROPERTY OUTPUT_NAME "${PLAYDATE_GAME_DEVICE}.elf")
+
+	add_custom_command(
+		TARGET ${PLAYDATE_GAME_DEVICE} POST_BUILD
+		COMMAND ${CMAKE_STRIP} --strip-unneeded -R .comment -g
+		${PLAYDATE_GAME_DEVICE}.elf
+		-o ${CMAKE_CURRENT_SOURCE_DIR}/Source/pdex.elf
+	)
+
+	set_property(
+		TARGET ${PLAYDATE_GAME_DEVICE} APPEND PROPERTY ADDITIONAL_CLEAN_FILES
+		${CMAKE_CURRENT_SOURCE_DIR}/Source/pdex.elf
+		)
+
+	set_property(
+		TARGET ${PLAYDATE_GAME_DEVICE} APPEND PROPERTY ADDITIONAL_CLEAN_FILES
+		${PRODUCT_DIR}/${PLAYDATE_GAME_DEVICE}.pdx
+		)
+
+	add_custom_command(
+		TARGET ${PLAYDATE_GAME_DEVICE} POST_BUILD
+		COMMAND ${PDC} Source ${PRODUCT_DIR}/${PLAYDATE_GAME_DEVICE}.pdx
+		WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+	)
+
+else ()
+
+	add_custom_command(TARGET ${PLAYDATE_GAME_NAME} PRE_BUILD COMMAND ${CMAKE_COMMAND} -E make_directory ${PRODUCT_DIR})
+
+	set(LIB_EXT "")
+
+	if (MSVC)
+
+		set(LIB_EXT "dll")
+
+		if(${CMAKE_GENERATOR} MATCHES "Visual Studio*" )
+			set(BUILD_SUB_DIR $<CONFIG>/)
+			file(TO_NATIVE_PATH ${SDK}/bin/PlaydateSimulator.exe SIMPATH)
+			file(TO_NATIVE_PATH ${PRODUCT_DIR}/${PLAYDATE_GAME_NAME}.pdx SIMGAMEPATH)
+			set_property(TARGET ${PLAYDATE_GAME_NAME} PROPERTY VS_DEBUGGER_COMMAND ${SIMPATH})
+			set_property(TARGET ${PLAYDATE_GAME_NAME} PROPERTY VS_DEBUGGER_COMMAND_ARGUMENTS "\"${SIMGAMEPATH}\"")
+		endif()
+
+		add_custom_command(
+			TARGET ${PLAYDATE_GAME_NAME} POST_BUILD
+			COMMAND ${CMAKE_COMMAND} -E copy
+			${CMAKE_CURRENT_BINARY_DIR}/${BUILD_SUB_DIR}${PLAYDATE_GAME_NAME}.dll
+			${CMAKE_CURRENT_SOURCE_DIR}/Source/pdex.dll)
+
+	elseif(APPLE)
+
+		set(LIB_EXT "dylib")
+
+		if(${CMAKE_GENERATOR} MATCHES "Xcode" )
+			set(BUILD_SUB_DIR $<CONFIG>/)
+			set_property(TARGET ${PLAYDATE_GAME_NAME} PROPERTY XCODE_SCHEME_ARGUMENTS \"${PRODUCT_DIR}/${PLAYDATE_GAME_NAME}.pdx\")
+			set_property(TARGET ${PLAYDATE_GAME_NAME} PROPERTY XCODE_SCHEME_EXECUTABLE ${SDK}/bin/Playdate\ Simulator.app)
+		endif()
+
+		add_custom_command(
+			TARGET ${PLAYDATE_GAME_NAME} POST_BUILD
+			COMMAND ${CMAKE_COMMAND} -E copy
+			${CMAKE_CURRENT_BINARY_DIR}/${BUILD_SUB_DIR}lib${PLAYDATE_GAME_NAME}.dylib
+			${CMAKE_CURRENT_SOURCE_DIR}/Source/pdex.dylib)
+
+	elseif(UNIX)
+
+		set(LIB_EXT "so")
+
+		add_custom_command(
+			TARGET ${PLAYDATE_GAME_NAME} POST_BUILD
+			COMMAND ${CMAKE_COMMAND} -E copy
+			${CMAKE_CURRENT_BINARY_DIR}/lib${PLAYDATE_GAME_NAME}.so
+			${CMAKE_CURRENT_SOURCE_DIR}/Source/pdex.so)
+
+	elseif(MINGW)
+
+		set(LIB_EXT "dll")
+
+		add_custom_command(
+			TARGET ${PLAYDATE_GAME_NAME} POST_BUILD
+			COMMAND ${CMAKE_COMMAND} -E copy
+			${CMAKE_CURRENT_BINARY_DIR}/lib${PLAYDATE_GAME_NAME}.dll
+			${CMAKE_CURRENT_SOURCE_DIR}/Source/pdex.dll)
+	else()
+		message(FATAL_ERROR "Platform not supported!")
+	endif()
+
+	set_property(
+		TARGET ${PLAYDATE_GAME_NAME} APPEND PROPERTY ADDITIONAL_CLEAN_FILES
+		${CMAKE_CURRENT_SOURCE_DIR}/Source/pdex.${LIB_EXT}
+		)
+
+	set_property(
+		TARGET ${PLAYDATE_GAME_NAME} APPEND PROPERTY ADDITIONAL_CLEAN_FILES
+		${PRODUCT_DIR}/${PLAYDATE_GAME_NAME}.pdx
+		)
+
+	add_custom_command(
+		TARGET ${PLAYDATE_GAME_NAME} POST_BUILD
+		COMMAND ${PDC} ${CMAKE_CURRENT_SOURCE_DIR}/Source
+		${PRODUCT_DIR}/${PLAYDATE_GAME_NAME}.pdx)
+
+endif ()

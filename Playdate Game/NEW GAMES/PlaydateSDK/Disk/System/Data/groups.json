@@ -1,0 +1,29 @@
+{
+	"groupCount":4,
+	"groups": [
+		 {
+			"UUID":"f98er24s8ur3zpzxh0da1yoje8760xl",
+			"name":"Purchased",
+			"type":1,
+			"gameCount":0
+		},
+		 {
+			"UUID":"sls7e9th4lpcv7uvh32x6k7vhlvzwel",
+			"name":"Testing",
+			"type":2,
+			"gameCount":0
+		},
+		 {
+			"UUID":"ogakeoeeojo78o47vujxaka68692ydc",
+			"name":"User",
+			"type":3,
+			"gameCount":70
+		},
+		 {
+			"UUID":"t3k047rjl54y4jc34rr62g73vvykgry",
+			"name":"System",
+			"type":4,
+			"gameCount":6
+		}
+	}
+]
