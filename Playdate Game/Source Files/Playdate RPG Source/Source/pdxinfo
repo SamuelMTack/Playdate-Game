@@ -1,0 +1,6 @@
+name=Playdate RPG
+author=SamuelMTack
+description=A retro RPG with dice battles.
+bundleID=com.samuelmtack.playdaterpg
+version=0.1
+buildNumber=1
