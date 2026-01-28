@@ -1,0 +1,24 @@
+The Infinite Elevator: You control an elevator in a busy building. Use the crank to go up and down to pick up passengers. The challenge is managing "weight" and speed—too fast and you'll make them sick; too slow and they leave angry.
+
+Artillery / Pocket Tanks: Use the crank to adjust the angle of your shot. It’s much more precise than buttons and feels like operating a real gear-driven cannon.
+
+Digital Kaleidoscope: Not strictly a game, but a visualizer. Use the crank to rotate and "mix" 1-bit patterns. It’s a great way to practice dithering in your art.
+
+Endless Fishing: Use the crank to reel in fish. The faster you crank, the quicker the line comes in, but if you crank too hard while the fish is pulling, the line snaps.
+
+One-Screen Dungeon Crawler: A turn-based "rogue-lite" where you move a single character through a 10x10 grid.
+
+Tamagotchi-style "Pocket Monster": A persistent simulation where you check in on a creature throughout the day. You could use the crank to "pet" it or play mini-games to keep its happiness up.
+
+Crank-Powered Runner: Rotate the crank to "generate" energy or speed for a character. One full rotation could equal one "flap" or "jump." It’s physically engaging and easy to program.
+
+Battle Ship
+
+Uno: The classic "matching" game. Match colors or numbers and use action cards like Skip or Reverse to trip up your opponents.
+
+War: The ultimate game of luck. Players flip cards simultaneously, and the higher card takes both.
+
+Carcassonne: A "tile-laying" game where you build a medieval landscape of cities, roads, and monasteries. You score points by placing your followers (meeples) on the features as you build them.
+
+Catan Board Game
+
