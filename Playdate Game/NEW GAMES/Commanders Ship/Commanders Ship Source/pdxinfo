@@ -1,0 +1,6 @@
+name=Commanders Ship
+author=Antigravity
+description=Classic Naval Strategy Game.
+bundleID=com.antigravity.commandersship
+version=1.0.0
+imagePath=icon

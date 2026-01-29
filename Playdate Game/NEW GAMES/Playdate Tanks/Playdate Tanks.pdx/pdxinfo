@@ -1,0 +1,8 @@
+name=Playdate Tanks
+author=Antigravity
+description=A clone of Artillery / Pocket Tanks with terrain deformation.
+bundleID=com.antigravity.playdatetanks
+version=1.0.0
+imagePath=icon
+pdxversion=30002
+buildtime=822979471

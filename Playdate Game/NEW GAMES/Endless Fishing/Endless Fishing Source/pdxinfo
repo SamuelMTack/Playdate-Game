@@ -1,0 +1,6 @@
+name=Endless Fishing
+author=Antigravity
+description=Crank to reel in fish. Don't snap the line!
+bundleID=com.antigravity.endlessfishing
+version=1.0.0
+imagePath=icon

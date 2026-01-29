@@ -1,0 +1,8 @@
+name=Kingdom Builder
+author=Antigravity
+description=Tile-laying strategy game.
+bundleID=com.antigravity.kingdombuilder
+version=1.0.0
+imagePath=icon
+pdxversion=30002
+buildtime=822985395

@@ -1,0 +1,8 @@
+name=One Card Left
+author=User
+description=A classic matching card game.
+bundleID=com.user.onecardleft
+version=1.0.0
+imagePath=icon
+pdxversion=30002
+buildtime=822977337

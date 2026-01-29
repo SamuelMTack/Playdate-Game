@@ -1,0 +1,8 @@
+name=Playdate Pal
+author=Antigravity
+description=A persistent virtual pet.
+bundleID=com.antigravity.playdatepal
+version=1.0.0
+imagePath=icon
+pdxversion=30002
+buildtime=822986367
