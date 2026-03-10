@@ -1,0 +1,8 @@
+name=Petris
+author=Antigravity
+description=A simple Tetris clone for Playdate.
+bundleID=com.antigravity.tetris
+version=1.0.0
+imagePath=launcher
+pdxversion=30002
+buildtime=822260700

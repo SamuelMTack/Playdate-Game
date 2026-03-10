@@ -1,0 +1,8 @@
+name=Digital Kaleidoscope
+author=Antigravity
+description=Visualizer using crank to control patterns.
+bundleID=com.antigravity.kaleidoscope
+version=1.0.0
+imagePath=icon
+pdxversion=30002
+buildtime=822985782

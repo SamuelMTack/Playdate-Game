@@ -1,0 +1,6 @@
+name=Rotary Rogue
+author=Samuel
+description=A crank-based tunnel runner.
+bundleID=com.samuel.rotaryrogue
+pdxversion=30002
+buildtime=822291603

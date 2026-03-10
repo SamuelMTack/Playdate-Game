@@ -1,0 +1,12 @@
+name=Battle Digman
+author=Antigravity
+description=A Dig Dug clone for Playdate
+bundleID=com.antigravity.digdug
+version=1.0.0
+buildNumber=1
+imagePath=
+launchSoundPath=
+contentWarning=
+contentWarning2=
+pdxversion=30002
+buildtime=822258691
