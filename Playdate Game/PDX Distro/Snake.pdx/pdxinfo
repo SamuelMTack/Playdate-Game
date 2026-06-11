@@ -1,0 +1,8 @@
+name=Playdate Snake
+author=Samuel & Antigravity
+description=A classic retro Snake game with music, SFX, and crank support.
+bundleID=com.samuel.playdatesnake
+version=1.0.0
+buildNumber=1
+pdxversion=30005
+buildtime=834458076
