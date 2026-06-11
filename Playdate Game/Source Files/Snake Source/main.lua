@@ -311,7 +311,9 @@ function playdate.update()
         gfx.fillRect(60, titleY, 280, 52)
         gfx.setColor(gfx.kColorWhite)
         gfx.drawRoundRect(63, titleY + 3, 274, 46, 4)
+        gfx.setImageDrawMode(gfx.kDrawModeFillWhite)
         gfx.drawTextAligned("**S N A K E**", 200, titleY + 12, kTextAlignment.center)
+        gfx.setImageDrawMode(gfx.kDrawModeCopy)
         
         gfx.setColor(gfx.kColorBlack)
         gfx.drawTextAligned("Press (A) to Start Game", 200, 135, kTextAlignment.center)
@@ -534,15 +536,12 @@ function playdate.update()
         gfx.drawLine(0, HUD_H - 1, SCREEN_W, HUD_H - 1)
         
         -- Draw Score / Info
+        gfx.setImageDrawMode(gfx.kDrawModeFillWhite)
         gfx.drawText("SCORE: **" .. score .. "**", 15, 8)
         gfx.drawText("BEST: **" .. highScore .. "**", 120, 8)
         
-        -- Draw Crank Info & Accumulator Widget
-        if playdate.isCrankDocked() then
-            gfx.drawTextAligned("UNFOLD CRANK TO STEER", 280, 8, kTextAlignment.right)
-        else
-            gfx.drawTextAligned("CRANK STEER", 280, 8, kTextAlignment.right)
-            
+        -- Draw Crank Accumulator Widget
+        if not playdate.isCrankDocked() then
             -- Crank needle meter UI
             local wx, wy = 370, 16
             gfx.drawCircleAtPoint(wx, wy, 8)
@@ -558,6 +557,7 @@ function playdate.update()
             local needleAngle = math.rad(crankAccumulator)
             gfx.drawLine(wx, wy, wx + 8 * math.sin(needleAngle), wy - 8 * math.cos(needleAngle))
         end
+        gfx.setImageDrawMode(gfx.kDrawModeCopy)
         
     elseif gameState == STATE_GAMEOVER then
         -- Static background render (frozen playfield state)
@@ -584,6 +584,7 @@ function playdate.update()
         gfx.fillRect(0, 0, SCREEN_W, HUD_H)
         gfx.setColor(gfx.kColorWhite)
         gfx.drawLine(0, HUD_H - 1, SCREEN_W, HUD_H - 1)
+        gfx.setImageDrawMode(gfx.kDrawModeFillWhite)
         gfx.drawText("SCORE: **" .. score .. "**", 15, 8)
         gfx.drawText("BEST: **" .. highScore .. "**", 120, 8)
         
@@ -607,6 +608,7 @@ function playdate.update()
         
         gfx.drawTextAligned("Press (A) to Play Again", 200, 152, kTextAlignment.center)
         gfx.drawTextAligned("Press (B) to return to Title", 200, 172, kTextAlignment.center)
+        gfx.setImageDrawMode(gfx.kDrawModeCopy)
         
         -- Button Handling
         if playdate.buttonJustPressed(playdate.kButtonA) then

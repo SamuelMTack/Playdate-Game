@@ -1,3 +1,2 @@
 This game is In Development, There will be improvements and bug fixes in time
-
-Hello my name is Sam I just started Game Development and am new to coding. I make games as a Hobby/Side Project and as a One Man Team so forgive the simplicity and the bugs. I take inspiration from games that I have played Mainly simple Arcade games. I hope to make a larger more complex game when I have more expertise in development. Please feel free to comment and let me know what I can do better and what to fix as well as suggestions.
+I just started Game Development and am new to coding. I make games as a Hobby/Side Project and as a One Man Team so forgive the simplicity and the bugs. I take inspiration from games that I have played Mainly simple Arcade games. I hope to make a larger more complex game when I have more expertise in development. Please feel free to comment and let me know what I can do better and what to fix as well as suggestions.
