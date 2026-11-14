@@ -1,0 +1,8 @@
+name=Topography Plane
+author=Antigravity
+description=A creative topographic line art game. Crank to generate wavy contour lines, A to stamp, B to undo.
+bundleID=com.antigravity.topographyplane
+version=1.0.0
+buildNumber=1
+pdxversion=30002
+buildtime=848008262
