@@ -1,0 +1,8 @@
+name=Gears
+author=Antigravity
+description=Interactive mechanical Gear Simulator. Spin interlocking gear trains with the Crank and switch between gear combinations with Left and Right.
+bundleID=com.antigravity.gears
+version=1.0.0
+buildNumber=1
+pdxversion=30002
+buildtime=848621073

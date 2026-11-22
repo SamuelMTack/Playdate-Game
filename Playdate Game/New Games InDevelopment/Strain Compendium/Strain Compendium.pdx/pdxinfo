@@ -1,0 +1,8 @@
+name=Strain Compendium
+author=Antigravity
+description=An illustrated, readable reference compendium of cannabis strains, genetics, terpenes, flavors, and history for Playdate.
+bundleID=com.antigravity.straincompendium
+version=1.0.0
+buildNumber=1
+pdxversion=30002
+buildtime=848616009

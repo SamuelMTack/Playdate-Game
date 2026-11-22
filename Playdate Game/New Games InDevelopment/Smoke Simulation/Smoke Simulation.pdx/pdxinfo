@@ -1,0 +1,8 @@
+name=Smoke Simulation
+author=Antigravity
+description=Interactive fluid smoke simulation. Press A and B to disperse random smoke from the bottom, move the vortex center with the D-Pad, and spin the Crank to whirl the smoke.
+bundleID=com.antigravity.smokesimulation
+version=1.0.0
+buildNumber=1
+pdxversion=30002
+buildtime=848615752

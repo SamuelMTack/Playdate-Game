@@ -1,0 +1,6 @@
+name=Foosball
+author=Antigravity
+description=Tabletop Foosball for Playdate! Slide your rods Left and Right, spin the paddles with the Crank, and press A to launch the ball.
+bundleID=com.antigravity.foosball
+version=1.0.0
+buildNumber=1
